@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/WF1F3F5"
+    style="@style/LayoutMatchParent">
+
+    <include
+        layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        style="@style/LayoutHeightFill"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <LinearLayout
+            style="@style/LayoutWidthMatch"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/read_power" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/seekbar_power"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="@color/G778198"
+                app:bsb_bubble_text_color="@color/white"
+                app:bsb_second_track_color="@color/RECB3BA"
+                app:bsb_section_text_color="@color/B3A3A3A"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_thumb_color="@color/RCF112B"
+                app:bsb_thumb_radius="0dp"
+                app:bsb_thumb_radius_on_dragging="0dp"
+                app:bsb_track_color="@color/GD1D6DB"
+                app:bsb_track_size="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidthMatch"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/write_power" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/write_power"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="@color/G778198"
+                app:bsb_bubble_text_color="@color/white"
+                app:bsb_second_track_color="@color/RECB3BA"
+                app:bsb_section_text_color="@color/B3A3A3A"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_thumb_color="@color/RCF112B"
+                app:bsb_thumb_radius="0dp"
+                app:bsb_thumb_radius_on_dragging="0dp"
+                app:bsb_track_color="@color/GD1D6DB"
+                app:bsb_track_size="8dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="25dp"
+            android:background="@color/GE1E3E8" />
+
+        <LinearLayout
+            style="@style/LayoutWidthMatch"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="GUN" />
+
+            <TextView
+                android:id="@+id/gunBattery"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:textColor="#D3291D" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidthMatch"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="PDA" />
+
+            <TextView
+                android:id="@+id/pdaBattery"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:textColor="#D3291D" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="25dp"
+            android:background="@color/GE1E3E8" />
+
+        <LinearLayout
+            style="@style/LayoutWidthMatch"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/language" />
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                android:layout_width="208dp"
+                android:layout_height="32dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/LayoutWidthMatch"
+
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="25dp"
+                android:layout_weight="1"
+                android:text="ASCII" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Ascii"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                style="@style/GrayTextBold"
+                android:layout_width="25dp"
+                android:layout_weight="1"
+
+                android:text="Beef" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_Beef"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        style="@style/LayoutWidthMatch">
+
+        <TextView
+            android:id="@+id/textView_version"
+            style="@style/VersionText"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:text="@string/app_version" />
+
+
+    </LinearLayout>
+</LinearLayout>

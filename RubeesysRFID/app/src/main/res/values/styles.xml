@@ -1,0 +1,267 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--  Theme  -->
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.NoActionBar">
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="DefaultAlertDialogTitleStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="DefaultAlertDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/white</item>                        <!--Dialog background-->
+        <item name="android:textColorPrimary">@color/B3A3A3A</item>                      <!--content text color-->
+        <item name="android:windowTitleStyle">@style/DefaultAlertDialogTitleStyle</item> <!--title text style-->
+        <item name="colorAccent">@color/RE43F4A</item>                                   <!--Button text color-->
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <!-- layout -->
+    <style name="LayoutWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutWidthMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutHeightMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutWidthFill">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutHeightFill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+
+
+    <style name="LayoutMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!--  EditText  -->
+    <style name="EditTextStyle">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/B3A3A3A</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/edit_text_style</item>
+    </style>
+
+    <!--  text  -->
+    <style name="ImageButtonText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/B232121</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CopyrightText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/G4E4E4E</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="ToolbarText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LightGrayText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/G737577</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="VersionText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/G6D7178</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="FileText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/G8D8D8D</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="GrayText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/B3A3A3A</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="GrayTextBold" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/B3A3A3A</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BlackText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BlackBoldText" parent="BlackText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RedText" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/RCF112B</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="RedBoldText" parent="RedText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RedBoldTextLarge" parent="RedBoldText">
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="GreenBoldTextLarge" parent="LayoutWrapContent">
+        <item name="android:textColor">@color/G4BC643</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--  button  -->
+    <style name="DefaultButton" parent="LayoutWrapContent">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ImageButton" parent="DefaultButton">
+        <item name="android:layout_height">76dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="BlackButton" parent="DefaultButton">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RedButton" parent="DefaultButton">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--  itemStyle  -->
+    <style name="WhiteBorderBox" parent="LayoutWidthMatch">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/white_border_box</item>
+    </style>
+
+
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+
+
+    <style name="Widget.Dialog.Button" parent="android:Widget.Holo.Light.Button">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.View.Button" parent="android:Widget.Holo.Light.Button">
+
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Widget.View.LabelTextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.View.TitleTextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:background">@color/title_bar_color</item>
+        <item name="android:textColor">@color/title_bar_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.View.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/value_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.View.ValueTextView" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.View.SelectMaskTextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.View.MessageTextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="listStyle1">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:text">No</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/WF1F3F5"
+    style="@style/LayoutMatchParent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="14dp"
+        style="@style/LayoutWidthMatch">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/textView_filenameCountDate"
+            style="@style/LightGrayText"/>
+        <CheckBox
+            android:id="@+id/checkBox_check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/check_box"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_saveList"
+        style="@style/LayoutHeightFill"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/LayoutWidthMatch">
+        <Button
+            android:id="@+id/button_download"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/download"
+            style="@style/BlackButton"/>
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            style="@style/RedButton"/>
+    </LinearLayout>
+</LinearLayout>

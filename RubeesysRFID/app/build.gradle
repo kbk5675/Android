@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ata.rfiddemo"
+        minSdkVersion 28
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    // PDA
+    implementation name: 'wsmr.dev.barcode_v1.22.2019010400', ext: 'aar'
+    implementation name: 'wsmr.dev.rfid-debug', ext: 'aar'
+    implementation name: 'wsmr.system.comm_v1.15.2019010400', ext: 'aar'
+    implementation name: 'wsmr.system.ctrl_v1.16.2019010400', ext: 'aar'
+    implementation name: 'wsmr.system.device_v1.13.2018101800', ext: 'aar'
+    implementation name: 'wsmr.system.jcomm_v1.19.2019010400', ext: 'aar'
+    implementation name: 'wsmr.util_vV191028_01', ext: 'aar'
+
+
+
+    // seekbar
+    implementation 'com.xw.repo:bubbleseekbar:3.20'
+
+    implementation files('libs\\epctagcoder-0.0.6-SNAPSHOT.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

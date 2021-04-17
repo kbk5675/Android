@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingHorizontal="14dp"
+    android:gravity="center"
+    style="@style/LayoutMatchParent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingVertical="22dp"
+        android:paddingHorizontal="25dp"
+        style="@style/LayoutWidthMatch">
+        <TextView
+            android:id="@+id/textView_title"
+            android:textSize="19dp"
+            android:layout_marginBottom="19dp"
+            style="@style/BlackBoldText"/>
+
+        <TextView
+            android:text="@string/save_message"
+            android:textSize="14dp"
+            style="@style/GrayText"/>
+        <EditText
+            android:id="@+id/editText_fileName"
+            android:textSize="14dp"
+            android:layout_marginVertical="17dp"
+            android:inputType="text"
+            style="@style/EditTextStyle" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingHorizontal="5dp"
+            style="@style/LayoutWidthMatch">
+            <TextView
+                android:id="@+id/textView_cancel"
+                android:text="@string/cancel"
+                android:layout_marginHorizontal="36dp"
+                style="@style/BlackBoldText"/>
+
+            <TextView
+                android:id="@+id/textView_save"
+                android:text="@string/save"
+                style="@style/RedBoldText"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

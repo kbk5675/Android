@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/WF1F3F5"
+    style="@style/LayoutMatchParent">
+
+    <include
+        layout="@layout/tool_bar"/>
+
+
+    <LinearLayout
+        style="@style/LayoutWidthMatch"
+        android:layout_height="503dp"
+        android:layout_marginVertical="0dp"
+
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingHorizontal="26dp">
+
+
+        <TextView
+            android:id="@+id/textView_epc"
+            style="@style/BlackText"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="160dp"
+            android:text="@string/count"
+            android:textColor="#4CAF50"
+            android:textSize="110dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/LayoutWidthMatch"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="0dp"
+
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp">
+
+
+    <Button
+        android:id="@+id/button_clear"
+        android:enabled="false"
+        android:text="@string/clear"
+        style="@style/RedButton"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

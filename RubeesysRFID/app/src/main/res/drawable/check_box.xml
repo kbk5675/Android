@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Unchecked -->
+    <item android:state_checked="false">
+        <shape>
+            <stroke android:color="@color/GC8CFDB" android:width="1dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+    <!-- Checked -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- 배경 -->
+            <item>
+                <shape>
+                    <stroke android:color="@color/GC8CFDB" android:width="1dp" />
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <!-- 이미지 영역 -->
+            <item android:drawable="@drawable/img_check"/>
+        </layer-list>
+    </item>
+</selector>

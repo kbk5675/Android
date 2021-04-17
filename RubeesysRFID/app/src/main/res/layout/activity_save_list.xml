@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    style="@style/LayoutMatchParent">
+
+    <include
+        layout="@layout/tool_bar"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_saveList"
+        style="@style/LayoutMatchParent"/>
+</LinearLayout>

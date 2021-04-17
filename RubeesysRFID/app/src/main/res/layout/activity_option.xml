@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/WF1F3F5"
+    style="@style/LayoutMatchParent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <TextView
+                style="@style/Widget.View.TitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reader_options" />
+
+            <!-- operation time -->
+            <TableRow
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/operation_time" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/operation_time"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="10dp" />
+
+            <TextView
+                style="@style/Widget.View.TitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inventory_options" />
+
+            <View android:layout_width="match_parent" android:layout_height="8dp" />
+
+            <!-- Global Band  -->
+            <TableRow
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/global_band" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/global_band"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <!-- Inventory time -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/inventory_time" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/inventory_time"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <!-- Idle time -->
+            <TableRow
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/idle_time" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/idle_time"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <!-- Session -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/inv_session" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/inventory_session"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <!-- Target -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/inv_target" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/inventory_target"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <!-- Start Q -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/q_start" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/q_start"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Max Q -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/q_max" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/q_max"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <!-- Min Q -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/q_min" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/q_min"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="10dp" />
+
+            <TextView
+                style="@style/Widget.View.TitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_options" />
+
+            <!-- power gain -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/power_gain" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/power_gain"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <!-- link profile -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/link_profile" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/link_profile"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/split_line_color" />
+
+            <TableRow >
+
+                <Button android:id="@+id/freq_channel"
+                    style="@style/Widget.View.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/freq_channel" />
+
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="10dp" />
+
+            <TextView
+                style="@style/Widget.View.TitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/system_options" />
+
+            <!-- log level -->
+            <TableRow
+                android:padding="3dp" >
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/log_level" />
+
+                <View android:layout_width="5dp" android:layout_height="5dp" />
+
+                <TextView android:id="@+id/log_level"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <View android:layout_width="match_parent" android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button android:id="@+id/save"
+            style="@style/Widget.View.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/action_save" />
+
+        <Button android:id="@+id/option_default"
+            style="@style/Widget.View.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/action_defaults" />
+
+    </LinearLayout>
+
+</LinearLayout>

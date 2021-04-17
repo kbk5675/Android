@@ -1,0 +1,119 @@
+<resources>
+    <integer name="skip_key_event_time">1000</integer>
+
+    <string name="app_name">LG Display</string>
+
+    <string name="dot">·</string>
+
+    <string name="rpid_scan">RFID Tag Reading</string>
+    <string name="tag_scan">Scan tag</string>
+    <string name="save_list">Save list</string>
+    <string name="save_list_detail">Save list detail</string>
+    <string name="setting">Setting</string>
+    <string name="power">RF Level</string>
+    <string name="language">Language</string>
+    <string name="save">Save</string>
+    <string name="save_message">Please enter a file name to save.</string>
+    <string name="duplicate_name">Duplicate file name exists.</string>
+    <string name="save_complete_message">Data saved.</string>
+    <string name="clear">Clear</string>
+    <string name="clear_message">Are you sure you want to reset the scanned data?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="total_count">Tag Count : </string>
+    <string name="total_Reading">Total : </string>
+    <string name="power_value">Read Power : %S</string>
+    <string name="wpower_value">Write Power : %s</string>
+    <string name="count">%d</string>
+    <string name="space">                    </string>
+    <string name="barcode_Inventory">BARCODE INVENTORY</string>
+    <string name="barcode_read_write"> WRITE (READ BARCODE)</string>
+    <string name="rfid_read_write"> WRITE (READ RFID)</string>
+    <string name="rfid">Rfid</string>
+    <string name="action_read">Read</string>
+    <string name="read_memory_param">Read Memory Parameters</string>
+    <string name="epc_company_item_serial">EPC / Company · Item · Serial</string>
+<!--    <string name="download_all">Export all</string>-->
+<!--    <string name="download_all_message">Do you want to download all saved data to a file?</string>-->
+    <string name="select_download_message">Do you want to download\n%,d selected data to a file?</string>
+    <string name="download_target_empty">Please select a data.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_target_empty">Please select data to delete.</string>
+    <string name="delete_message">Are you sure you want to delete\n%,d selected data?</string>
+    <string name="download">Export</string>
+    <string name="download_message">Do you want to download the saved data to a file?</string>
+    <string name="download_complete_message">The file has been saved.</string>
+    <string name="download_incomplete_count_message">Failed to save %,d files.</string>
+    <string name="download_incomplete_message">File save failed.</string>
+    <string name="filename_count_date"><![CDATA[<b>File name</b> / Count / Date]]></string>
+    <string name="count_date_value">%,d / %s</string>
+    <string name="app_version">App Ver. %s</string>
+    <string name="app_Rversion">Rfid Ver. %s</string>
+    <string name="copyright">Copyright © 2020 | r-pac International Corporation</string>
+    <string name="item_check">ItemCheck</string>
+    <string name="barcode">Barcode</string>
+    <string name="epc">EPC</string>
+    <string name="match">MATCH</string>
+    <string name="no_match">NO MATCH</string>
+    <string name="read_time">Read Time</string>
+    <string name="write">Write</string>
+    <string name="writePower_gain">Write Power Gain</string>
+    <string name="display_pc">Display PC</string>
+    <string name="ascii_mode">ASCII</string>
+    <string name="write_memory_value">Write Memory value</string>
+    <string name="write_memory_param">Write Memory Parameters</string>
+    <string name="action_clear">Clear</string>
+    <string name="stop">stop</string>
+    <string name="readData">Read Data</string>
+    <string name="writeData">Write Data</string>
+
+    <!-- Options -->
+    <string name="reader_options">Reader Options</string>
+    <string name="tag_type">Tag Type</string>
+    <string name="inventory_options">Inventory Options</string>
+    <string name="global_band">Global Band</string>
+    <string name="inventory_time">Inventory Time</string>
+    <string name="idle_time">Idle Time</string>
+    <string name="operation_options">Operation Options</string>
+    <string name="freq_channel">Frequency Channel</string>
+    <string name="system_options">System Options</string>
+    <string name="region">Region</string>
+    <string name="lbt_channel">LBT</string>
+    <string name="log_level">Log Level</string>
+    <string name="admin_password">Admin Password</string>
+    <string name="timeout_time">Timeout Time</string>
+    <string name="suffix_sec">sec</string>
+    <string name="suffix_msec">ms</string>
+    <string name="save_property">Saving Now Option Properties.</string>
+    <string name="default_property">Initializing Default Properties</string>
+    <string name="link_profile">Link Profile</string>
+    <string name="inv_session">Session</string>
+    <string name="inv_target">Target</string>
+    <string name="q_start">Start Q</string>
+    <string name="q_max">Max Q</string>
+    <string name="q_min">Min Q</string>
+    <string name="q_start_description">startQ must be greater than or equal to minQ and less than or equal to maxQ.</string>
+    <string name="q_max_description">maxQ must be greater than or equal to startQ and minQ.</string>
+    <string name="q_min_description">minQ must be less than or equal to startQ and maxQ.</string>
+    <string name="operation_time">Operation Time</string>
+    <string name="power_gain">Power Gain</string>
+    <string name="action_save">Save</string>
+    <string name="action_defaults">Defaults</string>
+    <string name="inventory_rfid">RFID Inventory</string>
+    <string name="inventory_barcode">BARCODE Inventory</string>
+    <string name="start">START</string>
+    <string name="read">Read</string>
+    <string name="tag">Tag</string>
+    <string name="powers">Power : %S</string>
+    <string name="read_power">Read Power</string>
+    <string name="write_power">Write Power</string>
+    <string name="read_memory">Read Memory</string>
+    <string name="write_memory">Write Memory</string>
+    <string name="exit">EXIT</string>
+    <string name="msg">Msg</string>
+
+    <string-array name="language_array">
+        <item>KO</item>
+        <item>EN</item>
+    </string-array>
+</resources>

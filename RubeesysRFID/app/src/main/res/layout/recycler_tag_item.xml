@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="14dp"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="9dp"
+    android:gravity="center"
+    android:background="@color/white"
+    style="@style/LayoutWidthMatch">
+
+    <TextView
+        android:id="@+id/textView_epc"
+        style="@style/GrayText"
+        android:textAlignment="viewStart" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/LayoutWrapContent">
+
+        <TextView
+            android:id="@+id/textView_count"
+            style="@style/GrayText"
+            android:textAlignment="textEnd" />
+        <TextView
+            android:layout_marginHorizontal="4dp"
+            android:text="@string/dot"
+            style="@style/GrayText"/>
+        <TextView
+            android:id="@+id/textView_itemReference"
+            style="@style/GrayText"/>
+        <TextView
+            android:layout_marginHorizontal="4dp"
+            android:text="@string/dot"
+            style="@style/GrayText"/>
+        <TextView
+            android:id="@+id/textView_serialNumber"
+            style="@style/GrayText"/>
+    </LinearLayout>
+</LinearLayout>
